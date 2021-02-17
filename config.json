@@ -1,0 +1,14 @@
+{
+  "shell.version": "1.0",
+  "shell.welcome": "Remote Shell Version #[ shell.version ]# (#[ client.address()[0] ]#:#[ client.address()[1] ]#)\nPython #[ sys.version ]#\nEnter #: help for metacommand help.",
+  "shell.encrypt": true,
+  "shell.helpmsg": [
+    "Remote Shell Help\n",
+    "Metacommands:",
+    "#: mode\t\t\tshow current transition mode",
+    "#: mode.encrypt\t\tswitch to encrypt mode",
+    "#: mode.signature\tswitch to signature mode (insecure)",
+    "#: exit\t\t\tshuts down the server",
+    "#: help\t\t\tshow this message\n"
+  ]
+}
