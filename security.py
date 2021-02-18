@@ -1,3 +1,19 @@
+'''
+This module provides API for security and cryptography implemtations.
+
+The only public interface is SecurityManager.
+
+Usage:
+>>> s1 = SecurityManager()
+>>> s2 = SecurityManager()
+>>> s1.load(s2.export())
+>>> s2.loadHex(s1.exportHex())
+>>> s2.verify(b'data', s1.sign(b'data'))
+True
+>>> s1.decrypt(s2.encrypt(b'data'))
+b'data'
+'''
+
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP, AES
 from Crypto.Hash import SHA384

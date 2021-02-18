@@ -10,5 +10,6 @@
     "#: mode.signature\tswitch to signature mode (insecure)",
     "#: exit\t\t\tshuts down the server",
     "#: help\t\t\tshow this message\n"
-  ]
+  ],
+  "server.port": 5000
 }
