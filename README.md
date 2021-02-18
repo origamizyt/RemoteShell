@@ -21,14 +21,6 @@ Client:
 $ python rshell.py <host> <port>
 ```
 
-Service:
-```
-$ python rshsvc.py install
-$ python rshsvc.py start
-$ python rshsvc.py stop
-$ python rshsvc.py remove
-```
-
 ## Config
 
 Configuration file: `config.json`
@@ -38,3 +30,4 @@ Configuration file: `config.json`
 use #\[expr\]# to evaluate expressions.
 - `shell.encrypt`: whether use encrypt mode or not, can be modified.
 - `shell.helpmsg`: help message, do not modify.
+- `server.port`: default port used by the server if not provided through sys.argv, can be modified.
